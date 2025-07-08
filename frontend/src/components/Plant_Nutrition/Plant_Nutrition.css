@@ -1,0 +1,39 @@
+
+.butcontain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+.something{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.plantbut {
+    flex-direction: column;
+    color: #283618;
+    border: 2px solid #283618;
+    padding: 13px 25px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    transition: background-color 0.1s ease;
+    font-weight: bolder;
+} 
+.plantbut:hover,
+.plantbut.clicked {
+    background-color: #283618;
+    color: #eff6e0;
+}
+
+.fert{
+    margin-bottom: 5rem;
+}
+.plant-heading1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: -1rem;
+}

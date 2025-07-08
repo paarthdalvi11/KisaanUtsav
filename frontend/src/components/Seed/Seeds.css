@@ -1,0 +1,66 @@
+
+.seed-main{
+  
+    overflow-x: hidden;
+  
+}
+.seed-selling-page {
+  max-width: 90vw;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seed-cards {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.seed-card {
+  flex: 0 0 calc(32.333% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.seed-card img {
+  width: 100%;
+  height: 220px; /* Set a fixed height for consistent size */
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+.seed-details {
+  padding: 20px;
+}
+
+.seed-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.seed-details p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.seed-details button {
+  background-color: #283618;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  transition: background-color 0.3s ease;
+}
+.seed-details button:hover {
+  background-color: #1b2510;
+}

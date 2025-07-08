@@ -1,0 +1,39 @@
+.body_sign {
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: #283618;
+}
+
+.togglebut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.togglebutton {
+    color: #283618;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.togglebutton:hover {
+    font-weight: 600;
+    background-color: #283618;
+    color: #eff6e0;
+    padding: 0.8rem 1rem;
+}

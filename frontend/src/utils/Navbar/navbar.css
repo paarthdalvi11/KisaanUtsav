@@ -1,0 +1,128 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+.main-frame-spj{
+  overflow-x: hidden;
+}
+.body{
+color: #283618;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: flex-start;
+}
+.head{
+  /* width: 50%; */
+  white-space: nowrap;
+  margin-right: 0;
+  margin-top: 1%;
+  margin-left: 1%;
+  transition: 1.3s ease;
+}
+
+
+.title{
+  height: 10vh;
+  margin-top: 0rem;
+  margin-right: 1rem;
+  margin-left: 0rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.8s ease ;
+}
+.container{
+  display: flex;
+  background-color: #eff6e0;
+  height: 13vh;
+  width: 100vw; 
+  margin: 0px;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin-top: 3.5%;
+  margin-right: 3rem;
+  height: 100%;
+  background-color: transparent;
+  /* width: 50.5vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.navbar li {
+  padding-left: 10px;
+  width: auto;
+}
+
+.navbar li a {
+  text-decoration:none;
+  color: #283618;
+  font-size: 1.3rem;
+  white-space:nowrap; 
+  display: flex;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  font-weight: 600;
+  justify-content: center;
+  margin-right: 0.5rem;
+} 
+.navbar li a:hover {
+  background-color: #283618; 
+  color: #eff6e0; 
+  /* width: 10vw; */
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navbar li.active a {
+  color: #eff6e0;
+  background-color: #283618;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+
+/*Horizontal Navbar*/
+
+
+
+.search-bar {
+  /* margin-left: 22vw; */
+  margin-right: 0%;
+  /* width: 99%; */
+  display: flex;
+  align-items:center; 
+}
+.search{
+  margin-top: -0.5rem;
+  color: #283618;
+  width: 2rem;
+  margin-left: -1rem;
+}
+.inputser {
+  width: 20.5rem; 
+  padding: 2.5%;
+  /* margin-left:3rem; */
+  margin-top: -0.5rem; 
+  border: 3px solid #283618;
+  border-radius: 5px;
+}
+
+.search1 {
+  padding-top: 2.0%;
+  cursor: pointer;
+  font-size: 1.9rem;
+}
+
+

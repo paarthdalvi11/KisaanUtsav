@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.base{
+    text-align: center;
+    margin-top: 3.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #283618;
+    margin-top: 1.3rem;
+    margin-bottom: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   -webkit-appearance: "Always Show Up/Down Arrows";
+
+}
+.products{
+    display: flex;
+    max-width: 2000px;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    list-style-type: none;
+}
+.seed-container{
+    padding: 2rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+
+}
+.seed-container input{
+    margin-top: 3rem;
+    width: 6.3rem;
+    text-align: center;
+    border: 0.5px solid rgb(215, 215, 215);
+    outline: none;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-weight: bolder;
+    background-color: rgb(232, 232, 232);
+}
+
+.seed-container button{
+    display: block;
+}
+.seed-container button{
+    background-color: #283618;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.seed-container button:hover{
+    background-color: #1b2510;
+}
+.seed-container h3{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.seed-container p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.quantity-controls{
+    display: flex;
+}
+
+ /* Quantity button CSS */
+/* .quantity{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.operators{
+    display: inline;
+    background-color: transparent;
+}
+input{
+    outline: none;
+    border: none;
+    width: 3rem;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bolder
+}
+.symbol:nth-child(1){
+    font-size: 30px;
+    border-right: 0.5px solid rgb(196, 196, 196);
+}
+.symbol:nth-child(3){
+    border-left: 0.5px solid rgb(196, 196, 196);
+}
+.symbol{
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(232, 232, 232);
+}
+.symbol:hover{
+    background-color: rgb(210, 210, 210);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   -webkit-appearance: none;
+} */

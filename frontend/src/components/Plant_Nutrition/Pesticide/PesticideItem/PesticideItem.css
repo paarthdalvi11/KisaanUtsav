@@ -1,0 +1,46 @@
+.pesticide-product{
+    padding: 2rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 360px;
+    min-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+}
+.pesticide-product input{
+    margin-top: 3rem;
+    width: 6.3rem;
+    text-align: center;
+    border: 0.5px solid rgb(215, 215, 215);
+    outline: none;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-weight: bolder;
+    background-color: rgb(232, 232, 232);
+}
+
+.pesticide-product button{
+    display: block;
+}
+.pesticide-product button{
+    background-color: #283618;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.pesticide-product button:hover{
+    background-color: #1b2510;
+}
+.pesticide-product h3{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.pesticide-product p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}

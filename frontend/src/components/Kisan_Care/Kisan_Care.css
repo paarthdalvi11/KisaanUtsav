@@ -1,0 +1,95 @@
+/* Main container */
+.kisan-care {
+  max-width: 800px;
+  height: 90vh;
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: -2rem;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.aititle{
+  margin-bottom: 1rem;
+  margin-top: -6rem;
+}
+/* Paragraphs */
+.kisan-care p {
+  color: #283618;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+
+/* Form container */
+.kisan-care-form {
+  text-align: center;
+  color: #283618;
+  font-size: 2rem;
+  width: 44vw;
+  height: 50vh;
+  padding: 2rem;
+  border: 0.1rem solid #283618;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Input field */
+.kisan-care-input {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  margin-bottom: 10rem;
+}
+
+/* Button */
+.kisan-care-button {
+  margin: 5rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  border: 0.1rem #283618 solid;
+  background-color: #eff6e0;
+  color: #283618;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kisan-care-button:hover {
+  background-color: #283618;
+  color: #eff6e0;
+}
+
+/* Response section */
+.kisan-care-response {
+  margin-top: 20px;
+}
+
+/* Response paragraph */
+.response-paragraph {
+  font-size: 1rem;
+  color: #283618;
+  margin-bottom: 10px;
+}
+
+/* Ordered list in the response */
+.response-ordered-list {
+  margin-bottom: 10px;
+}
+
+/* List items in the response */
+.response-ordered-list li {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+.kisan-care-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  /* Additional styles for disabled state */
+}
