@@ -99,7 +99,7 @@ const Cart = () => {
                 <>
                     <h1>Welcome To Cart</h1>
                     <h4>You Are Just A Step Away..</h4>
-                    <h3 className="smthng">Hey, {user?.username}. Here's Your Bag.</h3>
+                    <h3 className="smthng">Hey, {user?.firstName}. Here's Your Bag.</h3>
                     {isLoading ? (
                         <div className="loading">
                         <Loading />

@@ -11,16 +11,12 @@ const handleNewUser = async (req, res) => {
             return res.status(409).json({ message: 'Username already exists' });
         }
         const hashedPwd = await bcrypt.hash(password, 10);
-        const soilType = await axios.post('http://localhost:3500/getSoilType', {
-            location : location
-        })
 
         const result = await User.create({
             firstName,
             lastName,
             email,
             location,
-            soilType : soilType.data, 
             username,
             password: hashedPwd
         });

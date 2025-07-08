@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import './MyOrders.css';
+
 
 const MyOrders = () => {
     const userData = localStorage.getItem('currentUser');
@@ -14,43 +16,48 @@ const MyOrders = () => {
                 },
             });
             console.log(response);
-            setData(response.data.orders);
+            setData(response.data.orders || []);
         } catch (err) {
-            console.log(err.message);
+            console.log("Error fetching orders:", err.message);
         }
     };
 
     useEffect(() => {
-            fetchOrders();
-    }, []);
+        if (user) fetchOrders();
+    }, [user]);
 
     return (
-        <div>
+        <div style={{ padding: "1rem" }}>
             {!user ? (
                 <h2>Kindly login to see orders</h2>
             ) : (
-                <div>
+                <div className='order-container'>
                     <h1>My Orders</h1>
-                    <ul>
-                        {data.map((order, index) => {
-                            return (
-                                <div key={index}>
-                                    <h2>Order {index+1}</h2>
-                                    <p>{order.cart.map((item, index) => {
-                                        if (index === order.cart.length - 1) {
-                                            return item.name + " x " + item.quantity
-                                        }
-                                        else {
-                                            return item.name+ " x " + item.quantity
-                                        }
-                                    })}</p>
-                                    <p>Total Items : {order.cart.length} Total : {order.cartTotal}</p>
-                                    <p><strong>{order.status}</strong></p>
-                                    <hr />
-                                </div>
-                            )
-                        })}
-                    </ul>
+                    {data.length === 0 ? (
+                        <p>No orders found</p>
+                    ) : (
+                        <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
+                            {data.map((order, index) => (
+                                <li key={index} style={{ marginBottom: "1.5rem" }}>
+                                    <h2>Order {index + 1}</h2>
+                                    <p>
+                                        {(order.cartItems || []).map((item, i) => (
+                                            <span key={i}>
+                                                {item.name} x {item.quantity}
+                                                <br />
+                                                {i !== order.cartItems.length - 1 && " "}
+
+                                            </span>
+                                        ))}
+                                    </p>
+                                    <br />
+                                    <p><b>Total Items: {order.cartItems?.length || 0}</b></p>
+                                    <p><b>Total: ₹{order.cartTotal ?? "N/A"}</b></p>
+                                    <p><b>Status: {order.status ?? "Pending"}</b></p>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             )}
         </div>

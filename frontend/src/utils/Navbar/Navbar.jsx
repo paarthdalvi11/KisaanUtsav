@@ -20,7 +20,7 @@ const Navbar = ({ setSearchTerm }) => {
                 <NavItem to="/seeds" currentPath={location.pathname}>Seeds</NavItem>
                 <NavItem to="/weather-forecast" currentPath={location.pathname}>Weather Forecast</NavItem>
                 <NavItem to="/plant-nutrition" currentPath={location.pathname}>Plant Nutrition</NavItem>
-                <NavItem to="/kisan-care" currentPath={location.pathname}>Kisan Care</NavItem>
+                <NavItem to="/kisan-care" currentPath={location.pathname}>Kisaan Care</NavItem>
                 <NavItem to="/image-upload" currentPath={location.pathname}>Diseases</NavItem>
             </ul>
         </div>

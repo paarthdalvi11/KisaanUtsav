@@ -65,38 +65,41 @@ function KisanCare() { // Changed function name to camelCase
 
     console.log(mutation);
     return (
-        <div className="kisan-care"> 
-            <div className='aititle'>
-
-                <h1>Ask our AI</h1>
+        <div className="kisan-care">
+            <div className="aititle">
+            <h1>Ask our AI</h1>
             </div>
-            
-            <form className="kisan-care-form" onSubmit={submitHandler}> 
+
+            <div className="kisan-care-main">
+            {/* LEFT SIDE - FORM */}
+            <form className="kisan-care-form" onSubmit={submitHandler}>
                 <p>Enter your problem and let AI craft a unique solution.</p>
                 <label htmlFor="Enter your prompt:"></label>
                 <input
-                    type="text"
-                    value={prompt}
-                    onChange={handlePromptChange}
-                    placeholder="Write your problem here..."
-                    className="kisan-care-input" 
+                type="text"
+                value={prompt}
+                onChange={handlePromptChange}
+                placeholder="Write your problem here..."
+                className="kisan-care-input"
                 />
                 <button
-                    className={`kisan-care-button ${isPromptEmpty ? 'disabled' : ''}`}
-                    type="submit"
-                    disabled={isPromptEmpty}
+                className={`kisan-care-button ${isPromptEmpty ? 'disabled' : ''}`}
+                type="submit"
+                disabled={isPromptEmpty}
                 >
-                    Generate Solution
+                Generate Solution
                 </button>
             </form>
-            <section className="kisan-care-response"> 
+
+            {/* RIGHT SIDE - RESPONSE */}
+            <section className="kisan-care-response">
                 {mutation.isPending && <p>Generating solution for your problem...</p>}
-                {mutation.isError && <p>Cannot fulfill your request for this time</p>}
+                {mutation.isError && <p>Cannot fulfill your request at this time</p>}
                 {mutation.isSuccess && formatResponse(mutation.data)}
-                {/* {mutation.isSuccess && formatResponse(translate(mutation.data))} */}
-            </section>            
-        </div>  
-    );
+            </section>
+            </div>
+        </div>
+        );
 }
 
 export default KisanCare; // Changed export name to camelCase

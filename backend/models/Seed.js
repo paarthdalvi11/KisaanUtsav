@@ -20,9 +20,9 @@ const SeedSchema = new mongoose.Schema({
         type : String,
         requied : true
     },
-    distributer : {
-        type : mongoose.Schema.Types.ObjectId,
-        ref : 'Admin'
+    distributer: {
+        type: String,
+        default: "Unknown"
     },
     date: {
         type: Date,
@@ -32,4 +32,5 @@ const SeedSchema = new mongoose.Schema({
         collection : 'seeds'
 });
 
-module.exports = mongoose.model('Seed', SeedSchema);
+const Seed = mongoose.model('Seed', SeedSchema);
+module.exports = Seed;

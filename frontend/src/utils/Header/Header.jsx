@@ -53,21 +53,18 @@ const Header = () => {
                     </div>
                     <div className="search1" id="login" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         {user ? (
-                            <div className="dropdown">
-                                <LogoutIcon className='dropdown-logout-logo' title='Logout' />
-                                {showDropdown && (
-                                    <div className="dropdown-content">
-{/* HEAD */}
-                                        <Link to={'myorders'}>
-                                            <button className='something'>My Orders</button>
-                                        </Link>
-                                        <button onClick={handleLogout} className='something'>Logout</button>
-
-                                        <button className='dropdown-button' onClick={handleLogout}>Logout</button>
-{/* 0f337b19af4adc9a3d52ccb4d2d64720f8596650 */}
-                                    </div>
-                                )}
+                            <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                            <LogoutIcon className='dropdown-logout-logo' title='Logout' />
+                            {showDropdown && (
+                                <div className="dropdown-content">
+                                <Link to={'/myorders'}>
+                                    <button className='dropdown-button'>My Orders</button>
+                                </Link>
+                                <button className='dropdown-button' onClick={handleLogout}>Logout</button>
+                                </div>
+                            )}
                             </div>
+
                         ) : (
                             <Link to='/signup'>
                                 <LoginIcon className='search' title='Login' />

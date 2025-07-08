@@ -1,5 +1,4 @@
-/* Main container */
-.kisan-care {
+/* .kisan-care {
   max-width: 800px;
   height: 90vh;
   margin: auto;
@@ -15,7 +14,6 @@
   margin-bottom: 1rem;
   margin-top: -6rem;
 }
-/* Paragraphs */
 .kisan-care p {
   color: #283618;
   margin-bottom: 1rem;
@@ -24,7 +22,6 @@
 }
 
 
-/* Form container */
 .kisan-care-form {
   text-align: center;
   color: #283618;
@@ -37,7 +34,6 @@
   margin-bottom: 2rem;
 }
 
-/* Input field */
 .kisan-care-input {
   padding: 1rem;
   width: 100%;
@@ -46,7 +42,6 @@
   margin-bottom: 10rem;
 }
 
-/* Button */
 .kisan-care-button {
   margin: 5rem;
   padding: 1rem 1rem;
@@ -66,24 +61,24 @@
   color: #eff6e0;
 }
 
-/* Response section */
 .kisan-care-response {
   margin-top: 20px;
+  max-height: 40vh;           
+  overflow-y: auto;           
+  width: 100%;                
+  padding-right: 1rem;
 }
 
-/* Response paragraph */
 .response-paragraph {
   font-size: 1rem;
   color: #283618;
   margin-bottom: 10px;
 }
 
-/* Ordered list in the response */
 .response-ordered-list {
   margin-bottom: 10px;
 }
 
-/* List items in the response */
 .response-ordered-list li {
   list-style-type: decimal;
   margin-left: 20px;
@@ -91,5 +86,53 @@
 .kisan-care-button.disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  /* Additional styles for disabled state */
+} */
+
+/* Flex container for input and response */
+.kisan-care-main {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Left side form */
+.kisan-care-form {
+  flex: 1;
+  text-align: center;
+  color: #283618;
+  font-size: 2rem;
+  margin-left: 2rem;
+  padding: 2rem;
+  border: 0.1rem solid #283618;
+  border-radius: 0.5rem;
+  height: auto;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Right side response */
+.kisan-care-response {
+  flex: 1;
+  border: 0.1rem solid #283618;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  /* background-color: #f9fbe7; */
+}
+.kisan-care-response p{
+  background-color: transparent;
+}
+
+/* Input spacing fix */
+.kisan-care-input {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
 }
